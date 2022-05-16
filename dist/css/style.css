@@ -14,9 +14,14 @@ body {
   background: #a1c3ff;
 }
 
+.sub {
+  background-color: white;
+}
+
 
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 ul {
@@ -31,8 +36,11 @@ ul {
 
 .navbar {
   background: #3474e6;
+  position: sticky;
+  top: 0;
   color: #fff;
   height: 60px;
+  width: 1268px;
 }
 
 .navbar .logo {
@@ -67,11 +75,28 @@ ul {
 }
 
 .header {
-  background-color: #0151cc;
-  color: #fff;
+  background-size: contain;
+  background-image: url(../resources/bg-img1.jpg);
   min-height: 300px;
-  width: 100%;
+  width: 1268px;
+  position:initial;
   
+}
+
+.header .heading {
+  text-align: center;
+  background-color: white;
+  color: #3474e6;
+  padding: 10px;
+}
+.header .sm-heading {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.header p {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .header h1 {
@@ -86,12 +111,13 @@ ul {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content:center;
 }
 
 .contents .container {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .product {
@@ -102,6 +128,7 @@ ul {
   margin: 20px 10px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
+  text-align: center;
 }
 
 .product a {
@@ -111,6 +138,47 @@ ul {
 .product a:hover {
   color:aqua;
 }
+
+.product h2 {
+  text-align: center;
+}
+
+.sell {
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sell h2 {
+  margin-bottom: 40px;
+  margin-left: -15px;
+  background-color: #000;
+  color: #fff;
+}
+.choose {
+  background-color: whitesmoke;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 1100px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 
 @media (max-width: 768px) {
   .header .container {
@@ -128,18 +196,3 @@ ul {
   
  
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
